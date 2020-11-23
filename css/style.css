@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --main-bg-color: #0D143B;
+    --color-primary: #C6CDF5;
+    --color-secondary: #58B840;
+    --color-tertiary: #B0B4D0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    margin: 10rem auto;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .6rem;
+}
+
+.name {
+    font-size: 3rem;
+    letter-spacing: .7rem;
+    font-weight: bold;
+}
+
+.developer {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: .6rem;
+}
+
+.text {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+.dot {
+    font-size: 5rem;
+}
+
+.image-section {
+    margin-top: 3rem;
+}
+
+.profile-image {
+    width: 100%;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.social-media {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.link {
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .hello {
+        font-size: 3.5rem;
+    }
+    
+    .name {
+        font-size: 4.5rem;
+    }
+    
+    .developer {
+        font-size: 3rem;
+    }
+    
+    .text {
+        font-size: 3rem;
+        text-align: left;
+        font-weight: 300;
+        line-height: 4rem;
+    }
+    
+    .dot {
+        font-size: 6rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .intro-section {
+        width: 100%;
+    }
+
+    .image-section {
+        flex-basis: 100 auto;
+    }
+
+    .social-media {
+        flex-basis: 100 auto;
+    }
+}

@@ -77,7 +77,7 @@ body {
 }
 
 .social-media {
-    margin-top: 15rem;
+    margin-top: -6rem;
     display: flex;
     justify-content: space-around; 
 }
@@ -104,8 +104,6 @@ body {
     
     .text {
         font-size: 3rem;
-        text-align: left;
-        font-weight: 300;
         line-height: 4rem;
     }
     
@@ -117,18 +115,17 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        flex-direction: row;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 
-    .intro-section {
-        width: 100%;
-    }
-
-    .image-section {
-        flex-basis: 100 auto;
-    }
 
     .social-media {
-        flex-basis: 100 auto;
+        display: flex;
+        flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
     }
+
+
 }

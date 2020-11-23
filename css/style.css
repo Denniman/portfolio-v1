@@ -4,6 +4,7 @@
     --color-primary: #C6CDF5;
     --color-secondary: #58B840;
     --color-tertiary: #B0B4D0;
+    --color-teriary-2: #E9EAF4;
 }
 
 * {
@@ -39,6 +40,7 @@ body {
 
 .hello {
     display: block;
+    color: var(--color-teriary-2);
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: .6rem;
@@ -52,12 +54,14 @@ body {
 
 .developer {
     display: block;
+    color: var(--color-tertiary);
     font-size: 2rem;
     letter-spacing: .6rem;
 }
 
 .text {
     font-size: 2rem;
+    color: var(--color-tertiary);
     text-align: left;
     font-weight: 300;
     line-height: 3rem;
@@ -73,6 +77,7 @@ body {
 
 .profile-image {
     width: 100%;
+    height: 100%;
     filter: drop-shadow(2px 4px 8px #585858);
 }
 

@@ -128,7 +128,6 @@ body {
     .social-media {
         display: flex;
         flex-direction: row;
-        padding-bottom: 5rem;
        justify-content: space-around;
        align-items: center;
     }
